@@ -20,3 +20,22 @@ Nello stesso luogo: giorno 1
 Nello stesso luogo: giorno 3
 Nello stesso luogo: giorno 6
 """
+
+# n righe = len(luoghi)
+# n colone = len(luoghi[0])
+
+GIORNI=["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
+
+for giorno in range(len(luoghi[0])):
+    # if giorno sono tutti nello stesso luogo:
+    # if luoghi[0][giorno]==luoghi[1][giorno] and luoghi[0][giorno]==luoghi[2][giorno] and ... :
+    # if tutti gli amici a>=1 hanno la proprietà che luoghi[a][giorno]==luoghi[0][giorno]:
+
+    tutti_qui = True
+
+    for a in range(1, len(luoghi)):
+        if luoghi[a][giorno] != luoghi[0][giorno]:
+            tutti_qui = False
+
+    if tutti_qui:
+        print("Nello stesso luogo: giorno", GIORNI[giorno])

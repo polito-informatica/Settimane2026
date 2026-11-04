@@ -1,8 +1,3 @@
-# Informatica - 2026/2027 - Prova in Itinere di Programmaizone
-# Prova 2 - Turno 1
-
-# Esercizio 2: 
-
 """
 È data una lista di nomi di persone, ciascuno rappresentato da una stringa con nome e cognome separati da uno spazio.
 Si assuma che non vi siano nomi doppi o cognomi doppi.
@@ -43,3 +38,16 @@ supereroi = [
     "Arthur Curry"
 ]
 
+nomi=[]
+cognomi=[]
+
+for sup in supereroi:
+    # pos_spazio = sup.find(" ")
+    # nomi.append( sup[:pos_spazio] )
+    # cognomi.append( sup[pos_spazio+1:])
+    separati = sup.split(' ')  # separati = [ 'Peter', 'Parker' ]
+    nomi.append(separati[0])
+    cognomi.append(separati[1])
+
+print(nomi)
+print(cognomi)

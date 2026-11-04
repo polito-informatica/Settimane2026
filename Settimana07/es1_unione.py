@@ -1,8 +1,3 @@
-# Informatica - 2026/2027 - Prova in Itinere di Programmaizone
-# Prova 2 - Turno 2
-
-# Esercizio 2: 
-
 """
 Sono date due liste di stringhe: la prima contiene i nomi di persone,
 mentre la seconda contiene, in posizione corrispondente, il cognome delle
@@ -27,3 +22,10 @@ Risultato:
 
 nomi = ['Peter', 'Clark', 'Bruce', 'Tony', 'Steve', 'Diana', 'Barry', 'Arthur']
 cognomi = ['Parker', 'Kent', 'Wayne', 'Stark', 'Rogers', 'Prince', 'Allen', 'Curry']
+
+nuova = []
+for i in range(len(nomi)):
+    completo = nomi[i] + " " + cognomi[i]
+    nuova.append(completo)
+
+print(nuova)
