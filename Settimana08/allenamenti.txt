@@ -1,0 +1,4 @@
+bici 140 20
+bici 60 30
+bici 30 40
+bici 67 35
